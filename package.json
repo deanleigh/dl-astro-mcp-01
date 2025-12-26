@@ -1,0 +1,32 @@
+{
+  "name": "astro-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for creating and managing Astro pages and components",
+  "type": "module",
+  "bin": {
+    "astro-mcp-server": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "astro",
+    "model-context-protocol"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  },
+  "files": [
+    "build"
+  ]
+}

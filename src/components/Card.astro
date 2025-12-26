@@ -1,0 +1,15 @@
+---
+const { title, description } = Astro.props;
+---
+<div class="card">
+  <h3>{title}</h3>
+  <p>{description}</p>
+</div>
+
+<style>
+  .card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+</style>
